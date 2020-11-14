@@ -21,7 +21,7 @@ module.exports = function FormatNumbers(phone) {
     return _phone
 }
 
-module.exports = function ISPProvider() {
+function ISPProvider() {
     return {
         Safaricom: [
             '254101',
@@ -120,7 +120,7 @@ module.exports = function ISPProvider() {
     }
 }
 
-module.exports = function checkOperator(phone) {
+function checkOperator(phone) {
     const prefix_ke = (phone.toString()).substring(0, 6)
     const prefix = (phone.toString()).substring(0, 3)
 
@@ -136,4 +136,10 @@ module.exports = function checkOperator(phone) {
                         (Equitel.indexOf(prefix_ke) >= 0 ? 'Equitel' :
                             'Invalid Operator'))))
     }
+}
+
+
+module.exports = {
+    FormatNumbers: FormatNumbers,
+    checkOperator: checkOperator
 }
