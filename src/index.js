@@ -1,13 +1,9 @@
 function FormatNumbers(phone) {
-    // remove anything not a digit
     let phone_ = phone.replace(/\D/g, '')
     phone_ = phone_.toString()
-    // check length
     const length = phone_.length
 
-    // get prefix
     var _phone = ''
-    // length 12, check if its 254
     if (length == 12 && phone_.substring(0, 3) == '254') {
         _phone = phone_
     } else if (length == 9 && phone_.substring(0, 1) == 7) {
