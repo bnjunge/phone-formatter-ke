@@ -1,4 +1,4 @@
-function FormatNumbers(phone) {
+module.exports = function FormatNumbers(phone) {
     // remove anything not a digit
     let phone_ = phone.replace(/\D/g, '')
     phone_ = phone_.toString()
@@ -21,7 +21,7 @@ function FormatNumbers(phone) {
     return _phone
 }
 
-function ISPProvider() {
+module.exports = function ISPProvider() {
     return {
         Safaricom: [
             '254101',
@@ -120,7 +120,7 @@ function ISPProvider() {
     }
 }
 
-function checkOperator(phone) {
+module.exports = function checkOperator(phone) {
     const prefix_ke = (phone.toString()).substring(0, 6)
     const prefix = (phone.toString()).substring(0, 3)
 
@@ -136,10 +136,4 @@ function checkOperator(phone) {
                         (Equitel.indexOf(prefix_ke) >= 0 ? 'Equitel' :
                             'Invalid Operator'))))
     }
-}
-
-
-module.exports = {
-    FormatNumbers: FormatNumbers,
-    checkOperator: checkOperator
 }
