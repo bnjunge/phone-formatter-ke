@@ -1,6 +1,6 @@
 {
   "name": "phone-formater-ke",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Format Kenyan Phone Numbers and Check MVNO/ISP under the number",
   "main": "./src/index.js",
   "directories": {
