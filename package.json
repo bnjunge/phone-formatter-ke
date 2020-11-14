@@ -1,0 +1,37 @@
+{
+  "name": "phone-formater-ke",
+  "version": "1.0.0",
+  "description": "Format Kenyan Phone Numbers and Check MVNO/ISP under the number",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/**/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bnjunge/phone-formatter-ke.git"
+  },
+  "keywords": [
+    "Format",
+    "KE",
+    "Phone",
+    "Check",
+    "ISP",
+    "Check",
+    "Provider",
+    "SurvTech"
+  ],
+  "author": "Benson Njunge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bnjunge/phone-formatter-ke/issues"
+  },
+  "homepage": "https://github.com/bnjunge/phone-formatter-ke#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
