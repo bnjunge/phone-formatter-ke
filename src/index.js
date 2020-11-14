@@ -1,4 +1,4 @@
-module.exports = function FormatNumbers(phone) {
+function FormatNumbers(phone) {
     // remove anything not a digit
     let phone_ = phone.replace(/\D/g, '')
     phone_ = phone_.toString()
